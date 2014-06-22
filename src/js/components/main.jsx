@@ -1,9 +1,13 @@
-var react = require('react');
+/** @jsx React.DOM */
 
-modules.export = React.createClass({
-    render: function(){
+var React = require('react');
+
+module.exports = React.createClass({
+    render: function() {
         return (
-           <div>/div>
+            <div className="hello">
+                <h1>Hello World</h1>
+            </div>
         );
     }
 });
