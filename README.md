@@ -20,3 +20,11 @@ Start gulp
 ```
 $ gulp
 ```
+
+(I assume you have Node, NPM, Gulp etc.)
+
+## TODO
+* SASS basic template
+* CSS Framework (maybe)
+* Basic html template
+* Other cool stuff
