@@ -1,7 +1,7 @@
 DWebAppStarter
 ==============
 
-Empty webapp project, with react, browserify, browserSync, and other goodies
+Empty webapp project, with react, browserify, browserSync, and other goodies.. Not very useful yet.
 
 
 ## Getting started
@@ -24,7 +24,7 @@ $ gulp
 (I assume you have Node, NPM, Gulp etc.)
 
 ## TODO
-* SASS basic template
-* CSS Framework (maybe)
+* SASS basics: normalize, font imports, maybe icon set, grid framework (jeet or foundation)
 * Basic html template
+* Basic React page
 * Other cool stuff
