@@ -64,10 +64,14 @@ gulp.task('html', function() {
 // Convert JSX
 // Browserify
 gulp.task('build-js', function() {
-    var bundler = browserify('./src/js/app.js', {basedir: __dirname});
-    bundler.transform(reactify);
-
-    var stream = bundler.bundle({debug: !gutil.env.production});
+    var stream = browserify()
+        .add('./src/js/app.js')
+        .transform(reactify)
+        .bundle({debug: !gutil.env.production})
+        .on('error', function(err) {
+            gutil.log(err);
+            stream.end();
+        });
 
     return stream
         .pipe(source('app.js'))
