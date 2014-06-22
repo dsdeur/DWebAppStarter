@@ -11,7 +11,7 @@ $ git clone https://github.com/dsdeur/DWebAppStarter.git
 $ cd DWebAppStarter
 ```
 
-Install the npm modules
+Install the npm modules (might need sudo)
 ```
 $ npm install
 ```
