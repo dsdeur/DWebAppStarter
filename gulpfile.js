@@ -14,6 +14,7 @@ var reactify = require('reactify');
 var paths = {
     styles: {
         src: './src/scss/*.scss',
+        watch: './src/scss/**/*.scss',
         dest: './build/css'
     },
     scripts: {
@@ -91,7 +92,7 @@ gulp.task('serve', function() {
     });
 
     // Watch files
-    gulp.watch(paths.styles.src, ['compass']);
+    gulp.watch(paths.styles.watch, ['compass']);
     gulp.watch(paths.scripts.src, ['build-js']);
     gulp.watch(paths.images.src, ['images']);
     gulp.watch(paths.html.src, ['html']);
